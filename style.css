@@ -275,6 +275,7 @@ body{
     background-color: #F4EFE9;
     background: rgba(255, 144, 14, 0.1);
     width: 100%;
+    border: 1px solid #FF900E;
  
    
 }
@@ -315,6 +316,7 @@ body{
     font-size: 45px;
     color: #131313;
     margin: 35px;
+    margin-top: 150px;
 }
 
 
