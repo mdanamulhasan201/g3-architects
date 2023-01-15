@@ -314,14 +314,6 @@ font-size: 65px;
  Choose section 
  ---------------------*/
 
-.choose{
-    background-color: #F4EFE9;
-    background: rgba(255, 144, 14, 0.1);
-    width: 100%;
-    
- 
-   
-}
 .choose-details{
     text-align: center;
     padding: 50px;
@@ -347,9 +339,6 @@ font-size: 65px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     justify-items: center;
-    
-    /* column-gap: 20px; */
-   
     
 }
 
@@ -403,6 +392,9 @@ color: #FF900E;
     margin-top: 30px;
 }
 
+.sponspors-logo:hover{
+    background-color: #e17902;
+}
 
 /*--------------
         footer 
@@ -509,14 +501,12 @@ color: #FF900E;
     .boxing{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        width: 100%;
     }
-
-    .some-facts{
-
-  }
   .choose{
     position: relative;
      width: 100%;
+
   }
 
   .detail{
@@ -524,7 +514,7 @@ color: #FF900E;
     margin-bottom: 10px;
     justify-content: space-around;
     justify-items: center;
-    margin-left: 100px;
+    /* margin-left: 100px; */
   }
 
   .sponspors{
@@ -536,7 +526,9 @@ color: #FF900E;
     row-gap: 50px;
   }
 
-
+  .footer-section{
+    height: 200px;
+  }
 
 
   }
