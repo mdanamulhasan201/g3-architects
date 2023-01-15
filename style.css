@@ -11,17 +11,18 @@ body{
 /*--------------------
     navbar style
 ---------------------- */
-.container{
-    background-color: #F4EFE9;
-    background: rgba(255, 144, 14, 0.1);
-    width: 100%;
-}
+ .container{
+   padding: 0px 100px 0px 100px;
+} 
 .nav{
     /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    padding-top: 20px;
+    background-color: #F4EFE9;
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
    
 }
 
@@ -38,10 +39,17 @@ body{
     color: #424242;
 }
 
+.nav-items a:hover{
+    color: #FF900E;
+}
+
 .nav-logo{
     font-weight: 700;
     font-size: 25px;
     color: #131313;
+}
+.nav-logo:hover{
+    color: #FF900E;
 }
 
 /*---------------------
@@ -53,6 +61,9 @@ body{
      flex-direction: column;
      align-items: center;
      text-align: center;
+     background-color: #F4EFE9;
+     background: rgba(255, 144, 14, 0.1);
+     width:100%;
 
 }
 
@@ -75,6 +86,7 @@ body{
     width: 180px;
     height: 64px;
     background-color: #FF900E;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.10);
     border-radius: 8px;
     font-weight: 600;
     font-size: 20px;
@@ -83,8 +95,12 @@ body{
     margin: 50px 0px 50px 0px;
 }
 
+.btn:hover{
+    background-color: #e17902;
+}
+
 .banner-img img{
-    width: 1440px;
+    /* width: 1440px; */
     height: 700px;
     padding-bottom: 45px;
     border-radius: 8px;
@@ -171,6 +187,7 @@ body{
     margin-right: 100px;
 }
 
+
 .box{
     width: 586px;
     height: 171px;
@@ -201,34 +218,58 @@ body{
     
 }
 
+.architect-image{
+    display: flex;
+    flex-direction: column;
+     }
 
 
+/*---------------
+    Experience-button
+ ----------------*/
 
-/* .years{
-    background-color: #FF900E;
-    border-radius: 8px;
+.years{
+    position: relative; 
+    bottom: 100px;
     width: 342px;
     height: 200px;
-    z-index: -20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFFFFF;
     
 }
 
+.years p{
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
 .years-title{
-    text-align: center;
-    padding-top: 75px;
-    
-} */
+    font-weight: 700;
+font-size: 65px;
+}
 
 
-/* Some Facts */
+/*-----------------
+    Some Facts
+----------------- */
 .some-facts{
-    padding: 130px 0px 140px 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* left: 240px; */
+    margin-bottom: 80px;
+    
 }
 .boxing{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 120px;
-    padding: 0px 290px 180px 290px;
+    justify-items: center;
+    grid-row-gap: 15px;
+    margin-bottom: 90px;
 }
 
 .boxess{
@@ -269,13 +310,15 @@ body{
 }
 
 
-/* Choose section */
+/*-----------------
+ Choose section 
+ ---------------------*/
 
 .choose{
     background-color: #F4EFE9;
     background: rgba(255, 144, 14, 0.1);
     width: 100%;
-    border: 1px solid #FF900E;
+    
  
    
 }
@@ -296,13 +339,62 @@ body{
     font-weight: 600;
     font-size: 20px;
     color: #727272;
+    margin-bottom: 30px;
+}
+
+.detail-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    
+    /* column-gap: 20px; */
+   
+    
+}
+
+.detail{
+    width: 241.83px;
+    height: 241.83px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    background-color: white
+    
+}
+
+.detail:hover{
+    background-color: #e0dfdf;
+}
+
+.icon{
+margin-top: 50px;
+font-size: 50px;
+margin-bottom: 10px;
+color: #FF900E;
+}
+
+.detail:hover{
+    border: 1px solid #FF900E;;
 }
 
 
-/* sponsors*/
+/*---------------
+    sponsors
+ ----------------*/
 
 .sponspors{
     text-align: center;
+}
+
+.sponspors-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-top: 150px;
+    
+}
+.description-sponspors{
+    margin-top: 20px;
 }
 
 .sponspors-logo{
@@ -311,24 +403,20 @@ body{
     margin-top: 30px;
 }
 
-.sponspors-title{
-    font-weight: 700;
-    font-size: 45px;
-    color: #131313;
-    margin: 35px;
-    margin-top: 150px;
-}
 
-
-/* footer */
+/*--------------
+        footer 
+ ----------------*/
 
 .footer-section{
     background: #FFF4E7;
-    border-radius: 8px;
-    width: 1440px;
+    width: 100%; 
     height: 100px;
+    border-radius: 8px;
+    align-items: flex-start; 
     text-align: center;
-    margin: 131px 240px 216px 240px;
+    margin: 110px 0px 150px 0px;
+   
 }
 
 .footer-section h5{
@@ -336,7 +424,8 @@ body{
     font-size: 20px;
     position: relative;
     top: 40px;
-}
+    
+} 
 
 
 
@@ -351,7 +440,7 @@ body{
     .nav{
         flex-direction: column;
         text-align: center;
-        
+        width: 100%;
     }
 
     .nav-items ul{
@@ -359,7 +448,9 @@ body{
         align-items: center;
         padding-top: 50px;
     }
-
+    .banner-section{
+        width: 100%;
+}
     .banner-img img{
             width: 100%;
             height: 250px;
@@ -391,19 +482,61 @@ body{
         
     }
 
-    .images{
+    .architect-image .images{
         width: 100%;
         margin-top: -5px;
         height: 300px;
+    }
+
+    .architect-image .years{
+        position: relative;
+        top: -30px;
+        height: 100px;
+        width: 150px;
+    }
+
+    .years p{
+        font-weight: 500;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    
+    .years-title{
+        font-weight: 700;
+        font-size: 25px;
     }
 
     .boxing{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
-.some-facts{
-    padding: none;
+
+    .some-facts{
+
   }
+  .choose{
+    position: relative;
+     width: 100%;
+  }
+
+  .detail{
+    grid-column: 1;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    justify-items: center;
+    margin-left: 100px;
+  }
+
+  .sponspors{
+    position: relative;
+
+  }
+  .sponspors-logo{
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+
 
 
   }
