@@ -452,7 +452,11 @@ color: #FF900E;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /* margin-left: -100px; */
     
+    }
+    .our-features{
+    margin-left: -20px;
     }
 
     .features-img{
