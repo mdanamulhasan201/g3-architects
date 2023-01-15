@@ -313,6 +313,8 @@ font-size: 65px;
 .choose-details{
     text-align: center;
     padding: 50px;
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
    
 }
 
@@ -512,7 +514,11 @@ color: #FF900E;
     margin-bottom: 10px;
     justify-content: space-around;
     justify-items: center;
-    /* margin-left: 100px; */
+  
+  }
+
+  .choose-details{
+    margin-left: -50px;
   }
 
   .sponspors{
