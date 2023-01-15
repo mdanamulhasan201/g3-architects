@@ -100,7 +100,6 @@ body{
 }
 
 .banner-img img{
-    /* width: 1440px; */
     height: 700px;
     padding-bottom: 45px;
     border-radius: 8px;
@@ -157,9 +156,7 @@ body{
   ---------------------------*/
   .experience{
     display: flex;
-    /* align-items: center; */
     justify-content: center 
-    /* padding: 130px 240px 0px 240px; */
 }
   .hrr{
     display: flex;
@@ -259,7 +256,6 @@ font-size: 65px;
     display: flex;
     flex-direction: column;
     position: relative;
-    /* left: 240px; */
     margin-bottom: 80px;
     
 }
@@ -390,10 +386,12 @@ color: #FF900E;
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+    filter: grayscale(100%);
 }
 
 .sponspors-logo:hover{
-    background-color: #e17902;
+    transition: 1s;
+    filter: grayscale(0%);
 }
 
 /*--------------
